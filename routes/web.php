@@ -11,12 +11,12 @@
 |
 */
 	
-	Route::get('/','pagesController@home')->name('home');
+	Route::get('/','PagesController@home')->name('home');
 	
-	Route::get('/about','pagesController@about')->name('about');
+	Route::get('/about','PagesController@about')->name('about');
 	
-	Route::get('/contact','pagesController@contact')->name('contact');
+	Route::get('/contact','PagesController@contact')->name('contact');
 	
-	Route::post('/contact','pagesController@store')->name('contact.store');
+	Route::post('/contact','PagesController@store')->name('contact.store');
 	
-	Route::get('/thankyou/{name}','pagesController@thankyou')->name('thankyou');
+	Route::get('/thankyou/{name}','PagesController@thankyou')->name('thankyou');
